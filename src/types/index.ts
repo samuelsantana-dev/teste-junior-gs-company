@@ -1,6 +1,30 @@
 export type MessageStatus = 'sent' | 'delivered' | 'read' | 'failed';
 export type MessageDirection = 'inbound' | 'outbound';
 
+
+export interface Template {
+  id: string
+  name: string
+  content: string
+}
+
+export interface InputProps {
+  label?: string;
+  placeholder?: string;
+  onChange?: (value: string) => void;
+}
+
+export interface EmptyStateProps {
+  title?: string;
+  description?: string;
+}
+export interface AlertErrorProps {
+  message: string;
+  messageError?: string;
+}
+export interface LoadingProps {
+  text?: string;
+}
 export interface Message {
   id: string;
   contactId: string;
