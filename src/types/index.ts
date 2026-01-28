@@ -14,6 +14,16 @@ export interface InputProps {
   onChange?: (value: string) => void;
 }
 
+
+export interface Analytics {
+  activeChats: number
+  waitingChats: number
+  avgResponseTime: number
+  messagesReceivedToday: number
+  messagesSentToday: number
+}
+
+
 export interface EmptyStateProps {
   title?: string;
   description?: string;

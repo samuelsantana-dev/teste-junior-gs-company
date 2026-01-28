@@ -8,6 +8,7 @@ const menu = [
   { label: "Dashboard", href: "/dashboard/homeDashboard", icon: "📊" },
   { label: "Equipe", href: "/dashboard/team", icon: "👥" },
   { label: "Campanhas", href: "/dashboard/campaigns", icon: "📣" },
+  { label: "Análises", href: "/dashboard/analytics", icon: "📊" },
 ]
 
 export function SidebarNavigation() {
